@@ -53,8 +53,7 @@
 	position: absolute;
 	top: 50%;
 	left: 20px;
-	display: inline-block;
-	vertical-align: middle;
+	display: block;
 	width: 18px;
 	height: 18px;
 	margin: -10px 0px 0 0;
@@ -69,13 +68,18 @@
 .inpOp:checked + .boxOp .labOp span:after {
 	content: "";
 	position: absolute;
-	left: 21px;
+	display: block;
+	left: 22px;
 	top: 50%;
-	width: 16px;
-	height: 16px;
+	width: 12px;
+	height: 6px;
 	margin-top: -8px;
-	background: url(/img/btn_check.gif) no-repeat;
-	background-size: 16px auto;
+	border-bottom: solid 4px #555;
+	border-left: solid 4px #555;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 }
 .inpOp:checked + .boxOp .inner {
 	display: block;
