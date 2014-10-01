@@ -83,5 +83,5 @@
 }
 .inpOp:checked + .boxOp .inner {
 	display: block;
-	padding: 10px 0;
+	padding: 10px;
 }
