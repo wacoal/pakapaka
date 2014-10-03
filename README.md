@@ -1,11 +1,13 @@
 pakapaka
 ========
 
-アンドロイド対応。CSSパカパカコーディング。
+<p>アンドロイド対応。CSSパカパカコーディング。</p>
 
-すべてのスマホ端末に対応させようとするには
-①labelにonclick=""
-②:checked + その下の要素 { font-size: inehrit; }
-③appearance: none;
-④直近の要素にしか効かない
-の４つを覚えておく。
+<p>すべてのスマホ端末に対応させようとするには</p>
+<ol>
+<li>labelにonclick=""</li>
+<li>:checked + その下の要素 { font-size: inehrit; }</li>
+<li>appearance: none;</li>
+<li>直近の要素にしか効かない</li>
+</ol>
+<p>の４つを覚えておく。</p>
