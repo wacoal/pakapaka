@@ -3,7 +3,6 @@
 	position: relative;
 	display: block;
 	padding: 70px 10px 0;
-	/*border-top: solid 1px #dfdfdf;*/
 }
 .wrapOp .boxOp .inner { display: none; }
 .wrapOp .inpOp,
@@ -43,7 +42,6 @@
 	vertical-align: middle;
 	font-size: 14px;
 	line-height: 1.2em;
-	color: #3399cc;
 	color: #ff0072;
 	border: solid 1px #dfdfdf;
 	background: #efefef;
