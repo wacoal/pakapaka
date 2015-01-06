@@ -1,12 +1,12 @@
 @charset "euc-jp";
-.wrapOp {
+.wrap-open {
 	position: relative;
 	display: block;
 	padding: 70px 10px 0;
 }
-.wrapOp .boxOp .inner { display: none; }
-.wrapOp .inpOp,
-.wrapOp .labOp {
+.box-open__inner { display: none; }
+.wrap-open__inp,
+.box-open__label {
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -15,7 +15,7 @@
 	height: 60px;
 	cursor: pointer;
 }
-.wrapOp .inpOp {
+.wrap-open__inp {
 	margin: 0;
 	padding:0;
 	cursor: pointer;
@@ -23,21 +23,21 @@
 	appearance: none;
 	opacity: 0;
 }
-.wrapOp .labOp {
+.box-open__label {
 	padding: 0 0 0 0;
 	background: #fff;
 	font-size: 14px;
 }
-.wrapOp .labOp:before {
+.box-open__label:before {
 	content: "";
 	display: inline-block;
 	vertical-align:middle;
 	height: 100%;
 	margin-left: -0.5em;
 }
-.wrapOp .labOp span {
+.box-open__label__inner {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 0 0px;
 	padding: 6px 6px 6px 40px;
 	vertical-align: middle;
 	font-size: 14px;
@@ -46,11 +46,11 @@
 	border: solid 1px #dfdfdf;
 	background: #efefef;
 }
-.wrapOp .labOp span:before {
+.box-open__label__inner:before {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: 20px;
+	left: 10px;
 	display: block;
 	width: 18px;
 	height: 18px;
@@ -58,16 +58,16 @@
 	border: solid 1px #999;
 	background: #efefef;
 }
-.inpOp:checked + .boxOp { font-size: inehrit; }
-.inpOp:checked + .boxOp .labOp span {
+.wrap-open__inp:checked + .wrap-open__box { font-size: inehrit; }
+.wrap-open__inp:checked + .wrap-open__box .box-open__label__inner {
 	border: solid 1px #fff;;
 	background: none;
 }
-.inpOp:checked + .boxOp .labOp span:after {
+.wrap-open__inp:checked + .wrap-open__box .box-open__label__inner:after {
 	content: "";
 	position: absolute;
 	display: block;
-	left: 22px;
+	left: 12px;
 	top: 50%;
 	width: 12px;
 	height: 6px;
@@ -79,7 +79,7 @@
 	-o-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 }
-.inpOp:checked + .boxOp .inner {
+.wrap-open__inp:checked + .wrap-open__box .box-open__inner {
 	display: block;
 	padding: 10px;
 }
